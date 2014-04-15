@@ -1,0 +1,13 @@
+<li>
+  <div>
+    <a href="<%- config.root %>">
+      <h1>{{ jaekwon }}</h1>
+    </a>
+  </div>
+</li>
+<% if (config.subtitle){ %><li><a href="<%- config.root %>"><h3><%= config.subtitle %></h3></a></li><% } %>
+
+
+<% for (var i in theme.menu){ %>
+  <li><a href="<%- config.root %><%- theme.menu[i] %>"><%= i %></a></li>
+<% } %>
