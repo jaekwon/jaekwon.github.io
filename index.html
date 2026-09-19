@@ -1,28 +1,26 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  
-  <title>jaekwon</title>
+  <title>Jae Kwon</title>
   <meta name="author" content="Jae Kwon">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0>
-
-  
+  <meta name="description" content="Jae Kwon — creator of Tendermint, the first Byzantine fault tolerant proof-of-stake consensus protocol; co-founder of Cosmos; founder of NewTendermint and Gno.land.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Jae Kwon"/>
   <meta property="og:site_name" content="jaekwon"/>
-
-  
-    <meta property="og:image" content="undefined"/>
-  
-
+  <meta property="og:type" content="profile"/>
+  <link rel="canonical" href="http://jaekwon.com/">
   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="/css/simple-sidebar.css" type="text/css">
   <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="jaekwon" type="application/atom+xml">
-  <!-- <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css"> -->
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+  <style>
+    .bio blockquote{font-size:15px;border-left:4px solid #337ab7}
+    .bio blockquote footer{font-size:13px}
+    .bio dl.timeline dt{width:64px;text-align:left;font-weight:normal;color:#777}
+    .bio dl.timeline dd{margin-left:80px;margin-bottom:8px}
+    .bio .small{color:#777}
+  </style>
 </head>
 
 <body>
@@ -33,29 +31,15 @@
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav nav text-center">
       <li>
-  <div>
-    <a href="/">
-      <h1>{{ jaekwon }}</h1>
-    </a>
-  </div>
-</li>
-
-
-
-
-  <li><a href="/archives">Blog</a></li>
-
-  <li><a href="/about">About</a></li>
-
-
+        <div>
+          <a href="/">
+            <h1>{{ jaekwon }}</h1>
+          </a>
+        </div>
+      </li>
+      <li><a href="/archives">Blog</a></li>
+      <li><a href="/about">About</a></li>
     </ul>
-
-    <div class="text-center">
-    
-
-
-    
-    </div>
   </div>
 
   <!-- Page content -->
@@ -64,182 +48,75 @@
       <span class="glyphicon glyphicon glyphicon-tasks" ></span>
     </button>
 
-    <div class="page-content inset">
-  
-    
-
-  <article class="post">
-    
-      <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-    
-    <div class="post-content">
-      <header>
-        
-          <div class="icon"></div>
-          <time datetime="2014-05-12T00:16:35.000Z"><a href="/2014/05/11/tendermint/">May 11 2014</a></time>
-        
-        
-  
-    <h1 class="title"><a href="/2014/05/11/tendermint/">TenderMint: Consensus without Mining</a></h1>
-  
-
-      </header>
-      <div class="entry">
-        
-          <p>I’ve been thinking about a consensus protocol that can confirm transactions quickly without using proof-of-work mining as Bitcoin does.</p>
-<p>Here is a draft of the <a href="https://docs.google.com/document/d/18Vh9CZ6xDQTrhBrkm1JhlAngu3jIVHZr0nK2_7CBSWU/edit?usp=sharing" target="_blank">whitepaper</a>.</p>
-
-        
-      </div>
-      <footer>
-        
-          
-          
-        
-        <div class="clearfix"></div>
-      </footer>
+    <div class="content-header ">
+      <h1 class="title">Jae Kwon</h1>
     </div>
-  </article>
+    <div class="entry page-content inset bio">
+      <br />
 
-  
+      <p>My name is Jae Kwon. I'm a software engineer. I created Tendermint,
+      co-founded Cosmos, and founded NewTendermint and Gno.land.</p>
 
+      <h3>Education</h3>
+      <p>Cornell University, B.S. in Computer Science, class of 2005.</p>
 
+      <h3>Early career</h3>
+      <p>Lead mobile developer at Yelp, where I built Yelp's first iPhone app.</p>
 
+      <h3>Tendermint</h3>
+      <p>In 2014 I published
+      <a href="https://tendermint.com/static/docs/tendermint.pdf"><em>Tendermint: Consensus without Mining</em></a>,
+      the first protocol to secure a proof-of-stake blockchain with classical
+      Byzantine fault tolerant consensus. Validators post a bond that is destroyed
+      if they sign conflicting blocks, so equivocation is punishable rather than
+      merely unrewarded. That combination &mdash; BFT agreement plus bonded,
+      slashable stake &mdash; is what makes proof of stake work, and it is the
+      design later systems adopted.</p>
 
-  
-    
+      <blockquote>
+        <p>&ldquo;Repurposing BFT algorithms for proof of stake was first
+        introduced by Tendermint, and has modern inspirations such as [Algorand].
+        Casper follows this BFT tradition, though with some modifications.&rdquo;</p>
+        <footer>Vitalik Buterin and Virgil Griffith,
+        <a href="https://arxiv.org/abs/1710.09437"><em>Casper the Friendly Finality Gadget</em></a>
+        (2017), the paper specifying Ethereum's proof of stake.</footer>
+      </blockquote>
 
-  <article class="post">
-    
-      <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-    
-    <div class="post-content">
-      <header>
-        
-          <div class="icon"></div>
-          <time datetime="2014-04-14T23:49:20.000Z"><a href="/2014/04/14/hello-world/">Apr 14 2014</a></time>
-        
-        
-  
-    <h1 class="title"><a href="/2014/04/14/hello-world/">Hello World</a></h1>
-  
+      <p>The protocol's formal specification, with safety and liveness proofs, is
+      Buchman, Kwon and Milosevic,
+      <a href="https://arxiv.org/abs/1807.04938"><em>The latest gossip on BFT consensus</em></a> (2018).
+      Development history is public at
+      <a href="https://github.com/tendermint/tendermint">github.com/tendermint/tendermint</a>
+      (repository created May 2014).</p>
 
-      </header>
-      <div class="entry">
-        
-          <p>I’m using <a href="https://hexo.io" target="_blank">Hexo</a> for static site generation &amp; <a href="https://github.com" target="_blank">Github</a> to host the content.</p>
+      <h3>Timeline</h3>
+      <dl class="dl-horizontal timeline">
+        <dt>2005</dt><dd>B.S. Computer Science, Cornell University.</dd>
+        <dt>2014</dt><dd>Tendermint whitepaper. Co-founded All in Bits, Inc. (Tendermint Inc.) with Ethan Buchman; began the Cosmos project.</dd>
+        <dt>2018</dt><dd><em>The latest gossip on BFT consensus</em> &mdash; formal specification of Tendermint.</dd>
+        <dt>2020</dt><dd>Stepped down as CEO of Tendermint Inc.</dd>
+        <dt>2022</dt><dd>Founded NewTendermint; began Gno.land, whose contracts are written in Gno, a deterministic interpreted variant of Go, and published on-chain in source form.</dd>
+        <dt>2026</dt><dd>Gno.land mainnet launched in September
+        (<a href="https://www.einpresswire.com/article/943210544/gno-land-mainnet-is-live-newtendermint-puts-readable-go-code-on-chain">announcement</a>).</dd>
+      </dl>
 
-        
-      </div>
-      <footer>
-        
-          
-          
-        
-        <div class="clearfix"></div>
-      </footer>
+      <h3>Elsewhere</h3>
+      <p><a href="https://github.com/jaekwon">github.com/jaekwon</a> &middot;
+      <a href="https://newtendermint.org/">newtendermint.org</a> &middot;
+      <a href="https://gno.land/">gno.land</a></p>
+
+      <p class="small">Written and maintained by Jae Kwon. Last updated 18 September 2026.</p>
     </div>
-  </article>
-
-  
-
-
-
-
-  
-
-  <ul id="pagination" class="pagination pull-right">
-  
-  
-  <div class="clearfix"></div>
-</ul>
-</div>
-
-
-
-
-
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-
-<!-- Custom JavaScript for the Menu Toggle -->
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("active");
-});
-</script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: {
-    equationNumbers: {
-      autoNumber: "AMS"
-    },
-  },
-  tex2jax: {
-    inlineMath: [
-      ['$', '$'],
-      ["\\(", "\\)"]
-    ],
-    displayMath: [
-      ['$$', '$$'],
-      ["\\[", "\\]"]
-    ],
-    processEscapes: true
-  },
-  "HTML-CSS": {
-    linebreaks: {
-      automatic: true
-    }
-  },
-  SVG: {
-    linebreaks: {
-      automatic: true
-    }
-  }
-});
-</script>
-
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
+  });
+  </script>
 </div>
 
 </body>
