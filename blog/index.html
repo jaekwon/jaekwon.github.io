@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog | Jae Kwon</title>
+  <meta name="author" content="Jae Kwon">
+  <meta name="description" content="Posts by Jae Kwon.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Blog | Jae Kwon"/>
+  <meta property="og:site_name" content="jaekwon"/>
+  <link rel="canonical" href="https://jaekwon.com/blog/">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/simple-sidebar.css" type="text/css">
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="jaekwon" type="application/atom+xml">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav nav text-center">
+      <li>
+        <div>
+          <a href="/">
+            <h1>{{ jaekwon }}</h1>
+          </a>
+        </div>
+      </li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="https://meet.jaekwon.com/">Meet</a></li>
+    </ul>
+  </div>
+
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+    <button id="menu-toggle" href="#" class="btn btn-default ">
+      <span class="glyphicon glyphicon glyphicon-tasks" ></span>
+    </button>
+
+    <div class="content-header ">
+      <h1 class="title">Blog</h1>
+    </div>
+    <div class="archive page-content inset">
+      <div class="table-responsive">
+        <table class="posts table table-hover borderless">
+          <tr>
+            <td><a href="/blog/amazon-rents-sellers-their-own-customers/">Amazon rents sellers their own customers. I&#x27;m building the corner shop instead.</a></td>
+            <td class="text-right"><time class="datetime text-muted" datetime="2026-10-28">Oct 28 2026</time></td>
+          </tr>
+          <tr>
+            <td><a href="/2014/05/11/tendermint/">TenderMint: Consensus without Mining</a></td>
+            <td class="text-right"><time class="datetime text-muted" datetime="2014-05-12T00:16:35.000Z">May 11 2014</time></td>
+          </tr>
+          <tr>
+            <td><a href="/2014/04/14/hello-world/">Hello World</a></td>
+            <td class="text-right"><time class="datetime text-muted" datetime="2014-04-14T23:49:20.000Z">Apr 14 2014</time></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
+  });
+  </script>
+</div>
+
+</body>
+</html>
